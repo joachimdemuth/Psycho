@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap'); 
+
+body {
+  background-image: url('../assets/coffee2.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.title {
+  text-align:center;
+  padding-top: 50px;
+  font-family: 'Courier Prime';
+  letter-spacing: 2px;
+  color: rgb(114, 253, 1);
+  text-shadow: 3px 2px rgb(36, 70, 8);
+}
+
+.rubrik {
+  text-align:center;
+  font-family: 'Courier Prime';
+  letter-spacing: 2px;
+  color: rgb(114, 253, 1);
+  text-shadow: 3px 2px rgb(36, 70, 8);
+}
+
+.wrapper {
+  text-align: center;
+}
+
+#book {
+  color: white;
+}
+
+.canv {
+  margin-left: 100px;
+}

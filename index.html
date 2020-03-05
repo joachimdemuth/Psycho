@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Track your killings</title>
+
+    <!-- Include the p5 library -->
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="checkTitle()">
+    <style></style>
+    <div class="wrapper">
+      <div class="rubrik">
+        <p class="text">
+          Describe your killings through the inputs to finish your novel
+        </p>
+      </div>
+      <div class="input">
+        <label for="title">Name your novel:</label>
+        <input
+          type="text"
+          id="title"
+          name="Name your novel"
+          oninput="handleChange()"
+        />
+      </div>
+      <div class="buttons">
+        <button class="clear" onclick="clearData()">Clear</button>
+        <button
+          class="save"
+          id="save"
+          type="submit"
+          for="title"
+          onclick="saveTitle()"
+        >
+          Write chapter
+        </button>
+      </div>
+    </div>
+    <div class="novelle">
+      <p id="demo"></p>
+    </div>
+
+    <div class="titel">
+      <h1>Stay motivated</h1>
+    </div>
+    <div class="info">
+      <h2>Set color of the skin by pushing any button</h2>
+      <h2>How loud was the murder?</h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <script src="./functions.js"></script>
+</html>
